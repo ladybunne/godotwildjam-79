@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://o5aku8o0rgdn"]
+
+[ext_resource type="PackedScene" uid="uid://bfqsdjl5dckqv" path="res://bunne-gdkit/Systems/SplashScreen/SplashScreen.tscn" id="1_xe5an"]
+[ext_resource type="Texture2D" uid="uid://dl5myu8d2twu5" path="res://Assets/Images/Splash/Valbunne.png" id="2_8lrbv"]
+[ext_resource type="PackedScene" uid="uid://byy0qvr8x6vu0" path="res://Scenes/02_Title.tscn" id="2_acio6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8lrbv"]
+bg_color = Color(0.0588235, 0.0588235, 0.0588235, 1)
+
+[node name="SplashScreen" instance=ExtResource("1_xe5an")]
+next_scene = ExtResource("2_acio6")
+
+[node name="SplashScreenUI" parent="." index="0"]
+logo = ExtResource("2_8lrbv")
+
+[node name="PanelContainer" parent="SplashScreenUI" index="0"]
+theme_override_styles/panel = SubResource("StyleBoxFlat_8lrbv")
+
+[node name="TextureRect" parent="SplashScreenUI/PanelContainer/CenterContainer" index="0"]
+custom_minimum_size = Vector2(0, 600)
+texture = ExtResource("2_8lrbv")
+expand_mode = 3
+
+[node name="FadeIn" parent="SplashScreenUI" index="2"]
+wait_time = 0.4
+
+[node name="WaitAtFullOpacity" parent="SplashScreenUI" index="3"]
+wait_time = 1.4
+
+[node name="FadeOut" parent="SplashScreenUI" index="4"]
+wait_time = 0.4
+
+[editable path="SplashScreenUI"]
