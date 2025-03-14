@@ -1,0 +1,25 @@
+godotwildjam-79
+A game by Valbunne
+
+
+[table=2]
+[cell][left]Art                    [/left][/cell][cell]Val[/cell]
+[cell][left]Code[/left][/cell][cell]Ladybunne[/cell]
+[/table]
+
+Powered by bunne-gdkit,
+a personal gamedev solutions library by Ladybunne
+
+
+
+[i]~ tech ~[/i]
+
+Godot
+Visual Studio Code
+Procreate
+GitKraken
+GitHub
+itch.io
+butler
+Trello
+Figma
