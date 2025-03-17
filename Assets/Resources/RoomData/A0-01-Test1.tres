@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RoomData" load_steps=2 format=3 uid="uid://ddk5hnxunlk56"]
+
+[ext_resource type="Script" uid="uid://db4oxdopwxd3s" path="res://Scripts/RoomData.gd" id="1_2ku1w"]
+
+[resource]
+script = ExtResource("1_2ku1w")
+room_name = "Test1"
+display_name = "Testing Chamber"
+room_width = 1000
+left_edge_destination = ""
+right_edge_destination = "Test2"
+metadata/_custom_type_script = "uid://db4oxdopwxd3s"

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://lant6j6s5f4w"]
+
+[ext_resource type="PackedScene" uid="uid://8tlerknp5hfs" path="res://Scenes/Components/GameController.tscn" id="1_7wvy6"]
+[ext_resource type="PackedScene" uid="uid://dfgnucwfp58bi" path="res://Scenes/Rooms/A0-01-Test1.tscn" id="2_4gtey"]
+[ext_resource type="PackedScene" uid="uid://cw5rvt4hwskf2" path="res://Scenes/Entities/Player.tscn" id="2_nfkcg"]
+
+[node name="03_Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_nfkcg")]
+position = Vector2(100, 100)
+
+[node name="Rooms" type="Node2D" parent="."]
+
+[node name="A0-01-Test1" parent="Rooms" instance=ExtResource("2_4gtey")]
+
+[node name="GameController" parent="." node_paths=PackedStringArray("player", "room_creation_root_node", "current_room") instance=ExtResource("1_7wvy6")]
+player = NodePath("../Player")
+room_creation_root_node = NodePath("../Rooms")
+current_room = NodePath("../Rooms/A0-01-Test1")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://kp0a5u6i14m6"]
+
+[ext_resource type="Script" uid="uid://bybb8e76o86wq" path="res://Scenes/Components/RoomEdge.gd" id="1_1huvb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1huvb"]
+size = Vector2(32, 1080)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uh1fe"]
+size = Vector2(30, 1078)
+
+[node name="RoomEdge" type="Node2D"]
+script = ExtResource("1_1huvb")
+
+[node name="Wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
+shape = SubResource("RectangleShape2D_1huvb")
+
+[node name="TransitionArea" type="Area2D" parent="."]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TransitionArea"]
+shape = SubResource("RectangleShape2D_uh1fe")
+debug_color = Color(0.668515, 0.510128, 0, 0.42)

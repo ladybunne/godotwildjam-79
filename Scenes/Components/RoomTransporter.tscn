@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4bh6bwoauegq"]
+
+[ext_resource type="Script" uid="uid://b4jqff7dn2h3a" path="res://Scenes/Components/RoomTransporter.gd" id="1_dhc57"]
+
+[node name="RoomTransporter" type="Node"]
+script = ExtResource("1_dhc57")

@@ -2,7 +2,7 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tn58w"]
 
-[node name="02Title" type="Node2D"]
+[node name="02_Title" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

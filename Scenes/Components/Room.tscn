@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpkerllfgy4ab"]
+
+[ext_resource type="Script" uid="uid://byl1eame6puab" path="res://Scenes/Components/Room.gd" id="1_itdm8"]
+[ext_resource type="PackedScene" uid="uid://kp0a5u6i14m6" path="res://Scenes/Components/RoomEdge.tscn" id="2_4boj2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4boj2"]
+size = Vector2(1920, 32)
+
+[node name="Room" type="Node2D"]
+script = ExtResource("1_itdm8")
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+position = Vector2(960, 1064)
+shape = SubResource("RectangleShape2D_4boj2")
+
+[node name="LeftEdge" parent="." instance=ExtResource("2_4boj2")]
+position = Vector2(16, 540)
+
+[node name="RightEdge" parent="." instance=ExtResource("2_4boj2")]
+position = Vector2(1904, 540)

@@ -2,13 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://bfqsdjl5dckqv" path="res://bunne-gdkit/Systems/SplashScreen/SplashScreen.tscn" id="1_xe5an"]
 [ext_resource type="Texture2D" uid="uid://dl5myu8d2twu5" path="res://Assets/Images/Splash/Valbunne.png" id="2_8lrbv"]
-[ext_resource type="PackedScene" uid="uid://byy0qvr8x6vu0" path="res://Scenes/02_Title.tscn" id="2_acio6"]
+[ext_resource type="PackedScene" uid="uid://lant6j6s5f4w" path="res://Scenes/Flow/03_Main.tscn" id="2_147sb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8lrbv"]
 bg_color = Color(0.0588235, 0.0588235, 0.0588235, 1)
 
-[node name="SplashScreen" instance=ExtResource("1_xe5an")]
-next_scene = ExtResource("2_acio6")
+[node name="01_SplashScreen" instance=ExtResource("1_xe5an")]
+next_scene = ExtResource("2_147sb")
 
 [node name="SplashScreenUI" parent="." index="0"]
 logo = ExtResource("2_8lrbv")
