@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpkerllfgy4ab"]
+[gd_scene load_steps=5 format=3 uid="uid://dpkerllfgy4ab"]
 
 [ext_resource type="Script" uid="uid://byl1eame6puab" path="res://Scenes/Components/Room.gd" id="1_itdm8"]
+[ext_resource type="Resource" uid="uid://ddk5hnxunlk56" path="res://Assets/Resources/RoomData/A0-01-Test1.tres" id="2_1hahq"]
 [ext_resource type="PackedScene" uid="uid://kp0a5u6i14m6" path="res://Scenes/Components/RoomEdge.tscn" id="2_4boj2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4boj2"]
@@ -8,6 +9,7 @@ size = Vector2(1920, 32)
 
 [node name="Room" type="Node2D"]
 script = ExtResource("1_itdm8")
+room_data = ExtResource("2_1hahq")
 
 [node name="Floor" type="StaticBody2D" parent="."]
 

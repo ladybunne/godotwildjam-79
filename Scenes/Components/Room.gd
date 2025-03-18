@@ -1,4 +1,3 @@
-@tool
 class_name Room extends Node2D
 
 @export var room_data: RoomData = null
@@ -20,7 +19,7 @@ func _ready():
 	
 	reposition()
 	setup_edges()
-	
+
 func reposition():
 	# Floor
 	var floor_shape: CollisionShape2D = room_floor.get_child(0)
